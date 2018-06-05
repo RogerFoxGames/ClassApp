@@ -1,9 +1,19 @@
 <html>
-    <head>
 
-    </head>
-    <body>
-        <h1>Ciao! Stupido!</h1>
-        <p>In realta' lo stupido e' un altro</p>
-    </body>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Ciao! Stupido!</h1>
+    <p>In realta' lo stupido e' un altro</p>
+    <div ng-app="ClassApp" ng-controller="primoController">
+        <p>Nome :
+            <input type="text" ng-model="nome">
+        </p>
+        <h1>Ciao {{nome}}!</h1>
+    </div>
+</body>
+
 </html>
