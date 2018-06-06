@@ -8,3 +8,8 @@ var config = {
   messagingSenderId: "814235220128"
 };
 firebase.initializeApp(config);
+
+
+firebase.database().ref("citazioni/Furlanetto/cit1").once("value", function (response) {
+  console.log(response.val());
+})
