@@ -12,12 +12,11 @@
 <body>
     <h1>Ciao! Capra!</h1>
     <p>In realta' lo stupido e' un altro</p>
-    <div ng-app="ClassApp" ng-controller="primoController">
-        <p>Nome :
-            <input type="text" ng-model="nome">
-        </p>
-        <h1>Ciao {{nome}}!</h1>
-    </div>
+<div ng-app="ClassApp" ng-controller="ControllerPrincipale">
+    <p>Ciao {{cesare.nome}}!</p>
+    <p>In realta' io mi chiamo <input ng-model="cesare.nome"></p>
+    <button ng-click="saluto()">Saluta l'utente!</button>
+</div>
 </body>
 
 </html>
